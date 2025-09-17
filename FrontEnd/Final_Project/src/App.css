@@ -1,0 +1,158 @@
+.AdminPage{
+    width:90%;
+    padding:5%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.AdminBar {
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.AdminBar button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.AdminBar button:hover {
+    background-color: #003d80;
+}
+
+.AdminBar button:active {
+    transform: scale(0.95);
+}
+
+.SurviceList{
+    width:100%;
+    height:auto;
+}
+
+th,td{
+    color:black;
+} */
+
+
+
+.AdminPage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    width:90%;
+    padding:5%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+  }
+  
+  .AdminBar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .AdminBar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .AdminBar button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color:black;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+
+
+
+  .service-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .service-form input {
+    width: 45%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .service-form button {
+    width: 95%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .service-form button:hover {
+    background-color: #0056b3;
+  }
+  .survicedatalist{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+
+  }
+.AdminTital{
+    color:black;
+}

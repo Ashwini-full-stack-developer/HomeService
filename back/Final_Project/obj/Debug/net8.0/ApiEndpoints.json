@@ -1,0 +1,451 @@
+[
+  {
+    "ContainingType": "Final_Project.Controllers.AddressController",
+    "Method": "GetAllLocations",
+    "RelativePath": "api/Address/GetAllLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.AddressController",
+    "Method": "GetLocationById",
+    "RelativePath": "api/Address/GetLocationById/{addressId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.AddressController",
+    "Method": "SaveLocation",
+    "RelativePath": "api/Address/SaveFull",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "Final_Project.Models.AddressMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.AddressController",
+    "Method": "SaveSimpleLocation",
+    "RelativePath": "api/Address/SaveSimple",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "Final_Project.Models.AddressMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.AuthController",
+    "Method": "LabourLogin",
+    "RelativePath": "api/auth/labourlogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Final_Project.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Final_Project.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.BillGenerationController",
+    "Method": "GetBillGeneration",
+    "RelativePath": "api/BillGeneration/GetBillForm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.HistoryController",
+    "Method": "DeleteLabour",
+    "RelativePath": "api/History/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.HistoryController",
+    "Method": "GetAllLabours",
+    "RelativePath": "api/History/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.HistoryController",
+    "Method": "GetLabourById",
+    "RelativePath": "api/History/getbyid/{labourid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "labourid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.HistoryController",
+    "Method": "InsertLabour",
+    "RelativePath": "api/History/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hist",
+        "Type": "Final_Project.Models.HistoryMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.HistoryController",
+    "Method": "UpdateLabour",
+    "RelativePath": "api/History/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hist",
+        "Type": "Final_Project.Models.HistoryMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourController",
+    "Method": "DeleteLabour",
+    "RelativePath": "api/Labour/delete/{labourid}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "labourid",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourController",
+    "Method": "GetAllLabours",
+    "RelativePath": "api/Labour/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourController",
+    "Method": "InsertLabour",
+    "RelativePath": "api/Labour/insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "labour",
+        "Type": "Final_Project.Models.LabourMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourController",
+    "Method": "UpdateLabour",
+    "RelativePath": "api/Labour/update/{labourid}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "labourid",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "labour",
+        "Type": "Final_Project.Models.LabourMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourGetOrderController",
+    "Method": "DeleteLabourGetOrderController01",
+    "RelativePath": "api/LabourGetOrder/delteLabourOrder",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.LabourGetOrderController",
+    "Method": "LabourGetOrderController01",
+    "RelativePath": "api/LabourGetOrder/labourorder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Final_Project.Models.LabourGetOrder, Final_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.OrderController",
+    "Method": "GetOrderByID",
+    "RelativePath": "api/Order/GetOrderByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "OrderID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.OrderController",
+    "Method": "GetOrderLists",
+    "RelativePath": "api/Order/GetOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Final_Project.Models.OrderMaster, Final_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.OrderController",
+    "Method": "InsertLabourInformation",
+    "RelativePath": "api/Order/InsertNewOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ordermaster",
+        "Type": "Final_Project.Models.OrderMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.RegistractionController",
+    "Method": "GetRegistraction",
+    "RelativePath": "api/Registraction/GetRegistractionInformation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Final_Project.Models.RegistractionMaster, Final_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.RegistractionController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Registraction/InsertNewUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registractionmaster",
+        "Type": "Final_Project.Models.RegistractionMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.surviceController",
+    "Method": "DeleteSurviceInformation",
+    "RelativePath": "api/survice/DeleteServices",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.surviceController",
+    "Method": "getSurvicesDetails",
+    "RelativePath": "api/survice/GetSurvices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Final_Project.Models.SurvicesMaster, Final_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.surviceController",
+    "Method": "PostSurviceInformation",
+    "RelativePath": "api/survice/InsertServices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newService",
+        "Type": "Final_Project.Models.SurvicesMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Final_Project.Controllers.surviceController",
+    "Method": "UpdateTheSurvices",
+    "RelativePath": "api/survice/UpdateSurvice",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ServiceID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "survicemaster",
+        "Type": "Final_Project.Models.SurvicesMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
