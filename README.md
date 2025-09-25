@@ -1,9 +1,13 @@
 Project --> Home Service Providers
 
 • The Home Service Providers platform is designed to connect customers with professional service providers for a variety of household needs.
+
 • The platform aims to simplify the process of booking reliable professionals for home services while ensuring quality, transparency, and convenience.
+
 • For development we used technologys like CSS,React JS,SQL server, C sharp asp.Net core web API Development
+
 • Weused MSSQLdatabase for storage and implemented the concepts like Storedprocigers, Joins.
+
 • For Development we used the IDE’s called VS Code , Visual Studio.
 
 Technologies Used :
@@ -18,6 +22,7 @@ Backend Concepts  :
   • Authorization and athentication : JSON web Token.
 Database Concepts  :
   •Tables Used in Database :
+  
    1   CREATE TABLE [dbo].[addressuser](
 	        [Addressid] [varchar](100) primary key NOT NULL,
 	        [city] [varchar](100) NULL,
@@ -29,14 +34,14 @@ Database Concepts  :
 	        [area] [varchar](30) NULL,
 	        [ward] [varchar](30) NULL,
 	        [LandMark] [varchar](30) NULL,
-    )
+    );
   2   CREATE TABLE [dbo].[history](
 	        [ID] [int] IDENTITY(1,1) primary key NOT NULL,
 	        [custName] [varchar](30) NULL,
 	        [phNn] [varchar](10) NULL,
 	        [address] [varchar](100) NULL,
 	        [labourId] [varchar](6) NULL
-    )
+    );
   3   CREATE TABLE [dbo].[labourregister03](
 	        [ID] [int] IDENTITY(1,1) primary key NOT NULL,
 	        [Email] [varchar](100) NULL,
@@ -46,7 +51,7 @@ Database Concepts  :
 	        [Work] [varchar](100) NULL,
 	        [labourId] [varchar](20) NOT NULL,
 	        [jobrole] [varchar](10) NULL,
-    )
+    );
   4   CREATE TABLE [dbo].[OrdersList](
 	        [OrderID] [int] IDENTITY(1,1) primary key NOT NULL,
 	        [UserID] [varchar](20) NOT NULL,
@@ -56,7 +61,7 @@ Database Concepts  :
 	        [Discount] [decimal](10, 5) NOT NULL,
 	        [SurviceCost] [decimal](10, 5) NOT NULL,
 	        [TotalCost] [decimal](10, 5) NOT NULL,
-    )
+    );
   5   CREATE TABLE [dbo].[Register](
 	        [UserID] [varchar](20) primary key NOT NULL,
 	        [UserEmail] [varchar](max) NOT NULL,
@@ -65,18 +70,18 @@ Database Concepts  :
 	        [UserAddress] [varchar](max) NOT NULL,
 	        [password] [varchar](200) NULL,
 	        [Role] [varchar](10) NULL,
-    )
+    );
   6   CREATE TABLE [dbo].[Survices](
 	        [ServiceID] [varchar](20) primary key NOT NULL,
 	        [ServiceName] [varchar](30) NOT NULL,
 	        [ServiceImage] [varchar](max) NOT NULL,
 	        [ServiceCost] [int] NOT NULL,
 	        [ServiceDiscount] [int] NOT NULL,
-    )
+    );
   7   CREATE TABLE [dbo].[userdetails](
 	        [userEmail] [varchar](100) primary key NOT NULL,
 	        [password] [varchar](100) NOT NULL
-    ) 
+    ) ;
 
 • Stored Procedures used in Project :
   1  CREATE PROCEDURE GetAllLocationData
