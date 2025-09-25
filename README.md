@@ -79,4 +79,77 @@ Database Concepts  :
     ) 
 
 • Stored Procedures used in Project :
+  1  CREATE PROCEDURE GetAllLocationData
+	 AS BEGIN
+    	SELECT * FROM addressuser;
+	 END;
+
+  2  CREATE PROCEDURE GetLabourRegisterData
+	 AS BEGIN
+     SET NOCOUNT ON;
+    	SELECT ID,Email, Pass, name, phoneNO, Work,labourId ,jobrole FROM labourRegister03;
+	 END;
+	 
+  3  CREATE PROCEDURE GetLocationDataById
+     @AddressId varchar(100)
+	 AS BEGIN
+    	SELECT * FROM addressuser WHERE AddressId = @AddressId;
+	 END;
+	 
+   4  CREATE PROCEDURE InsertLabourDetails
+    	@Email VARCHAR(50),
+    	@Pas s VARCHAR(100),
+    	@name VARCHAR(50),
+    	@phoneNO VARCHAR(10),
+    	@Work VARCHAR(100),
+   	    @labourId VARCHAR(50)
+	AS BEGIN
+    	INSERT INTO Labourregister03 ( Email, Pass, name, phoneNO, Work, labourId) VALUES ( @Email, @Pass, @name, @phoneNO, @Work, @labourId);
+	END;
+   5  CREATE  PROCEDURE InsertLocationData
+    	@addressid varchar(20),
+    	@city VARCHAR(100),
+    	@street VARCHAR(255),
+    	@latitude DECIMAL(10, 6),
+   	   @longitude DECIMAL(10, 6),
+		@FullAddress varchar(255),
+		@userId varchar(20),
+		@area varchar(30),
+		@ward varchar(30),
+   	 	@LandMark varchar(30)
+		AS BEGIN
+    		INSERT INTO AddressUser ( addressid, city, street, latitude, longitude, FullAddress,userId ,area, ward,LandMark) VALUES (@addressid, @city, @street, @latitude, 				@longitude, @FullAddress, @userId, @area, @ward,@LandMark);
+	  END;
+
+   6  CREATE PROCEDURE sp_GetHistoryByID
+      @labourid varchar(6)
+	 AS BEGIN
+    	SELECT * FROM history WHERE     labourid = @labourid
+	END
+
+   7  CREATE PROCEDURE sp_InsertHistory
+      @custName VARCHAR(30),
+      @phNn VARCHAR(10),
+      @address VARCHAR(100),
+	  @labourId varchar(6)
+     AS BEGIN
+    	INSERT INTO history (custName, phNn, address,labourId) VALUES (@custName, @phNn, @address,@labourId)
+	 END
+
+  8  CREATE PROCEDURE UpdateLabourRegister
+    @ID INT,
+    @Email NVARCHAR(100),
+    @Pass NVARCHAR(100),
+    @Name NVARCHAR(100),
+    @PhoneNO NVARCHAR(20),
+    @Work NVARCHAR(100),
+	@labourId varchar(6)
+	AS BEGIN
+    	UPDATE labourRegister03 SET Email = @Email,
+        Pass = @Pass,
+        Name = @Name,
+        PhoneNO = @PhoneNO,
+        Work = @Work
+		WHERE 	labourId = @labourId;
+   END;
   
